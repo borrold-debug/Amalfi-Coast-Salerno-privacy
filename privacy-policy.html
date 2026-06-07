@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Amalfi Coast Salerno Guide App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy:     #0d1f35;
+      --azure:    #1a5f8a;
+      --gold:     #c9a84c;
+      --sand:     #f5efe6;
+      --terra:    #b04a2f;
+      --text:     #1a1a2e;
+      --muted:    #5a6475;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--sand);
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── HERO ── */
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 64px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 110%, #1a5f8a55 0%, transparent 70%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1' fill='%23ffffff08'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .app-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .subtitle {
+      color: #a0b4c8;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── WAVE ── */
+    .wave {
+      display: block;
+      width: 100%;
+      height: 60px;
+      background: var(--navy);
+    }
+    .wave svg { display: block; }
+
+    /* ── CONTENT ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-box {
+      background: #fff;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      box-shadow: 0 2px 16px #0d1f3510;
+    }
+
+    .intro-box p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .intro-box strong { color: var(--text); }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .icon {
+      width: 28px;
+      height: 28px;
+      background: var(--azure);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    section p {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #444;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight-card {
+      background: linear-gradient(135deg, #e8f4fd, #fef9f0);
+      border: 1px solid #c8dff0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 14px;
+    }
+
+    .highlight-card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--azure);
+      font-weight: 500;
+    }
+
+    /* ── CONTACT ── */
+    .contact-block {
+      background: var(--navy);
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 56px;
+    }
+
+    .contact-block h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .contact-block p {
+      color: #a0b4c8;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-block a {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      padding: 10px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-block a:hover { opacity: 0.85; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid #ddd;
+    }
+
+    footer span { color: var(--terra); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">🌊 Official App Policy</div>
+  <h1>Privacy Policy<br/><em>Amalfi Coast Salerno Guide</em></h1>
+  <p class="subtitle">Amalfi Coast &amp; Campania Travel Guide &nbsp;·&nbsp; Effective date: June 2026</p>
+</header>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="60">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#0d1f35"/>
+  </svg>
+</div>
+
+<main>
+
+  <div class="intro-box">
+    <p>
+      <strong>Amalfi Coast Salerno Guide App</strong> is a travel guide app for the Amalfi Coast, Salerno, Paestum, Capri, Naples and the Cilento region.
+      This policy explains clearly and simply what data we collect, why, and how we protect it.
+      <strong>We do not sell or share your personal data with third parties.</strong>
+    </p>
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2><span class="icon">📋</span> 1. Information We Collect</h2>
+    <p>The app collects only the minimum data necessary to function correctly:</p>
+    <ul>
+      <li><strong>Location data (optional):</strong> Used only to show your position on the map and calculate distances to points of interest. You can deny this permission at any time in your device settings.</li>
+      <li><strong>Usage data:</strong> Anonymous statistics on app usage (e.g. which sections are visited) to improve the user experience. No personal data is included.</li>
+      <li><strong>No account required:</strong> The app does not require registration, login, or any personal information.</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2><span class="icon">🔒</span> 2. How We Use Your Data</h2>
+    <p>We use the collected data exclusively to:</p>
+    <ul>
+      <li>Display interactive maps and nearby points of interest</li>
+      <li>Improve app performance and fix technical issues</li>
+      <li>Provide offline content without requiring an internet connection</li>
+    </ul>
+    <div class="highlight-card">
+      <p>✅ We do not use your data for advertising, profiling, or commercial purposes of any kind.</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2><span class="icon">🌐</span> 3. Third-Party Services</h2>
+    <p>The app may integrate the following third-party services, each with its own privacy policy:</p>
+    <ul>
+      <li><strong>Google Maps / Apple Maps</strong> – for interactive map display</li>
+      <li><strong>Expo / React Native</strong> – development platform (no user data collected)</li>
+      <li><strong>External transport links</strong> (Trenitalia, CSTP, SITA Sud, Travelmar, Alicost) – external websites opened in browser</li>
+    </ul>
+    <p style="margin-top:10px; font-size:13px; color: var(--muted);">When you access external links, you are subject to the privacy policies of those services.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2><span class="icon">📍</span> 4. Location Permissions</h2>
+    <p>
+      The app requests access to your device location only to show it on the map.
+      Location data is <strong>never stored on our servers</strong> and is not shared with any third party.
+      You can revoke this permission at any time via your device settings without affecting other app features.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2><span class="icon">👶</span> 5. Children's Privacy</h2>
+    <p>
+      Salerno Pocket is a family-friendly travel guide suitable for all ages.
+      We do not knowingly collect personal data from children under 13.
+      The app contains no advertising or in-app purchases.
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2><span class="icon">🔄</span> 6. Data Retention & Deletion</h2>
+    <p>
+      Since we do not collect personal data, there is nothing to delete.
+      All app preferences (language, favorite sections) are stored locally on your device only.
+      Uninstalling the app removes all locally stored data automatically.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2><span class="icon">⚖️</span> 7. Your Rights (GDPR)</h2>
+    <p>If you are a resident of the European Union, you have the right to:</p>
+    <ul>
+      <li>Access any data we hold about you</li>
+      <li>Request correction or deletion of your data</li>
+      <li>Object to processing of your data</li>
+      <li>File a complaint with your national data protection authority</li>
+    </ul>
+    <p style="margin-top:10px;">To exercise any of these rights, contact us at the address below.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2><span class="icon">📝</span> 8. Changes to This Policy</h2>
+    <p>
+      We may update this privacy policy periodically to reflect changes in the app or applicable law.
+      We will notify users of significant changes via an in-app notice.
+      Continued use of the app after changes constitutes acceptance of the updated policy.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact-block">
+    <h3>Questions? Contact Us</h3>
+    <p>For any questions about this privacy policy,<br/>you can reach us via the app store listing.</p>
+    <p style="margin-top:16px; font-size:12px; color:#607a90;">
+      Amalfi Coast Salerno Guide · Salerno, Italy
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Amalfi Coast Salerno Guide App &nbsp;·&nbsp; Made with <span>♥</span> in Salerno, Italy
+  &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
